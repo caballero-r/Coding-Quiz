@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* This part deals with the transitions between screens */
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
