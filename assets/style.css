@@ -3,11 +3,42 @@
     justify-content: space-between;
 }
 
+body {
+    background-color: lightblue;
+}
+
 /* This part deals with the transitions between screens */
 .show {
-    display: block;
+    display: flex;
 }
 
 .hide {
     display: none;
 }
+
+/* Styling for Start Screen */
+.start-screen-container, .game-screen, .game-over-screen, .high-scores-screen {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.start-screen-container h2,
+.start-screen-container p,
+.start-screen-container button {
+    margin: 10px;
+  }
+
+.start-screen-container p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+}  
+
+
+  /* Styling for the Game Screen */
+  
+.choices {
+    margin: 5px;
+  }
+  

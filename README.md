@@ -1,7 +1,7 @@
 # Coding-Quiz
 
 ## Description
-
+The purpose of this code was to create a coding quiz where the user could test their knowledge. I created the code to have the acceptance criteria below.
 
 
 ### Acceptance Criteria
@@ -26,7 +26,7 @@ THEN I can save my initials and score
 
 
 
-<!-- <img src="" width=500 height=800  alt=""> -->
+<img src="assets/images/preview.html.png" width=500 height=800  alt="">
 
 ## Resources
 1. Module 4 Web APSs Challenge - Code Quiz: https://courses.bootcampspot.com/courses/3173/assignments/50864?module_item_id=920592

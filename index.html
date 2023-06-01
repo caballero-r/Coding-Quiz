@@ -1,59 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Quiz</title>
-    <link rel="stylesheet" href="assets/style.css">
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Coding Quiz</title>
+		<link rel="stylesheet" href="assets/style.css" />
+	</head>
 
-  <body>
-    <!-- This is a static section that will remain on screen the entire time -->
-    <div class="header">
-        <p class="high-score-button">View High Scores</p>
-        <p class="timer">Timer: <span>0</span></p>
-    </div>
+	<body>
+		<!-- This is a static section that will remain on screen the entire time -->
+		<div class="header">
+			<button class="high-score-button">View Scores</button>
+			<p class="timer">Timer: <span id="timer-counter">130</span></p>
+		</div>
 
-    <!-- This section displays what the user will be interacting with. -->
-    <div class="main">
+		<!-- This section displays what the user will be interacting with. -->
+		<div class="main">
+			<!-- Initial Screen -->
+			<div class="start-screen-container show">
+				<h2>Code Quiz</h2>
+				<p>
+					Welcome to the coding Quiz!<br> 
+          You will be prompted with a question and 4
+					options to choose from. <br> 
+          Click the what you believe is the correct
+					answer.<br> 
+          If you get the answer wrong you will see that the timer in the
+					top left corner will be deducted time so take your time choosing your
+					answers. <br>
+          Thank you for playing my coding quiz!
+				</p>
+				<button id="start-button">Start</button>
+			</div>
 
-      <!-- Initial Screen -->
-      <div class="start-screen-container">
-        <h2>Code Quiz</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit optio rerum pariatur, beatae minima odit aspernatur quasi reiciendis quaerat dolores ea suscipit enim laboriosam perferendis, commodi placeat quas accusantium omnis?</p>
-        <button id="start-button">Start</button>
-      </div>
+			<!-- Questions Screen -->
+			<div class="game-screen hide">
+				<h3 id="quest">Question</h3>
+				<div class="options">
+					<button class="choices"></button>
+					<button class="choices"></button>
+					<button class="choices"></button>
+					<button class="choices"></button>
+				</div>
+			</div>
 
-      <!-- Questions Screen -->
-      <div class="game-screen hide">
-        <h3>Question</h3>
-        <ul>
-            
-        </ul>
-        <p></p>
-      </div>
+			<!-- Summary of Game Results Screen -->
+			<div class="game-over-screen hide">
+				<h3>Game Over!</h3>
+				<p>Your score is: <span>0</span></p>
+				<input
+					type="text"
+					name="name-input"
+					id="name-input"
+					placeholder="enter initials here."
+				/>
+				<button id="submit-score-button">Submit</button>
+				<button id="play-again-button">Play Again?</button>
+			</div>
 
-      <!-- Summary of Game Results Screen -->
-      <div class="game-over-screen hide">
-        <h3>Game Over!</h3>
-        <p>Your score is: <span>0</span></p>
-        <input type="text" name="name-input" id="name-input" placeholder="enter initials here.">
-        <button id="submit-score-button">Submit</button>
-      </div>
+			<!-- Final Screen -->
+			<div class="high-scores-screen hide">
+				<h3>High Scores</h3>
+				<ul></ul>
+			</div>
+		</div>
 
-      <!-- Final Screen -->
-      <div class="high-scores-screen hide">
-        <h3>High Scores</h3>
-        <ul>
-
-        </ul>
-        <button id="play-again-button">Play Again?</button>
-      </div>
-
-    </div>
-
-    <script src="assets/script.js"></script>
-  </body>
-
+		<script src="assets/script.js"></script>
+	</body>
 </html>
